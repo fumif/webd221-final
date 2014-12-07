@@ -1,0 +1,687 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+/* GLOBAL STYLES
+----------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1ead8;
+  font: 1em 'Ubuntu' Arial, sans-serif;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 26px;
+  text-align: center;
+}
+p {
+  line-height: 25px;
+  color: #898989;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* HEADER
+----------------------------------------------------------- */
+header h1 {
+  padding: 40px 0;
+  font-size: 22px;
+  font-weight: 400;
+  display: inline;
+  float: left;
+  width: 14.166666666666666%;
+  margin: 0 1.25%;
+}
+header h1 span {
+  color: #7687a1;
+}
+header #topnav {
+  float: right;
+}
+header #topnav li {
+  margin: 26px 14px;
+  float: left;
+  list-style-type: none;
+}
+header #topnav li a {
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+header #topnav li a:hover,
+header #topnav li a.current {
+  text-decoration: none;
+  border-bottom: 2px solid #7687a1;
+}
+i.fa-bars {
+  display: none;
+  float: right;
+}
+ul#theTarget {
+  padding: 0;
+  color: #f1ead8;
+  clear: both;
+  margin: 0;
+  height: 490px;
+}
+ul#theTarget h1,
+ul#theTarget p {
+  text-align: center;
+  text-transform: capitalize;
+}
+ul#theTarget h1 {
+  font-size: 60px;
+}
+ul#theTarget span {
+  color: #7687a1;
+}
+ul#theTarget li {
+  width: 100%;
+  height: 100%;
+}
+ul#theTarget li.image1 {
+  background: url('../images/home/slider1.jpg') no-repeat;
+}
+ul#theTarget li.image2 {
+  background: url('../images/home/slider2.jpg') no-repeat;
+}
+ul#theTarget li.image3 {
+  background: url('../images/home/slider3.jpg') no-repeat;
+}
+.tagline {
+  position: absolute;
+  width: 100%;
+  height: 490px;
+  z-index: 1;
+  text-align: center;
+  top: 25%;
+}
+.tagline h1,
+.tagline h2 {
+  width: 100%;
+  text-transform: capitalize;
+}
+.tagline h1 span,
+.tagline h2 span {
+  padding: 12px 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f1ead8;
+}
+.tagline h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 50px auto 0;
+}
+.tagline h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.about-bg,
+.ptrf-bg {
+  padding: 100px 0;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  height: 490px;
+}
+.about-bg h1,
+.ptrf-bg h1 {
+  width: 100%;
+  margin-top: 50px;
+}
+.about-bg h1 span,
+.ptrf-bg h1 span {
+  color: #7687a1;
+}
+.about-bg p,
+.ptrf-bg p {
+  margin: 0 auto;
+  color: #000;
+  width: 940px;
+}
+.about-bg h1,
+.ptrf-bg h1,
+.about-bg p,
+.ptrf-bg p {
+  text-align: center;
+  text-transform: capitalize;
+}
+.about-bg h1,
+.ptrf-bg h1 {
+  font-size: 60px;
+}
+.about-bg span,
+.ptrf-bg span {
+  color: #7687a1;
+}
+.about-bg {
+  background: url('../images/aboutus/about.jpg') no-repeat;
+}
+.ptrf-bg {
+  background: url('../images/portfolio/port.jpg') no-repeat;
+}
+.header-bottom {
+  float: left;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #000025;
+  text-align: center;
+}
+.header-bottom p {
+  color: #f1ead8;
+  line-height: 60px;
+}
+.header-bottom span {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #f1ead8;
+  text-transform: uppercase;
+}
+/* MAIN
+----------------------------------------------------------- */
+section,
+article {
+  clear: both;
+  padding: 23px;
+}
+section h2,
+article h2,
+section p,
+article p {
+  text-align: center;
+}
+section .content,
+article .content {
+  padding: 0 112px;
+}
+section span,
+article span {
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid #7687a1;
+}
+section li,
+article li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+}
+section li h3,
+article li h3 {
+  font-weight: normal;
+  font-family: 'Myriad Pro', Helvetica, Arial, sans-serif;
+}
+section h2 {
+  padding-bottom: 5px;
+}
+section #main-content {
+  margin: 0 auto;
+  padding: 35px 0;
+  width: 925px;
+  line-height: 25px;
+}
+section .main li {
+  display: inline;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+}
+section .main li p {
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+}
+section .about p {
+  font-size: 16px;
+  text-align: center;
+}
+.portfolio p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+article h4 {
+  font-size: 15px;
+  color: #7687a1;
+}
+article .projects li {
+  display: inline;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+}
+article .projects li h4,
+article .projects li p {
+  text-align: right;
+}
+article .team li {
+  display: inline;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+}
+article .team li p {
+  font-size: 14px;
+  text-align: center;
+}
+article .team li img {
+  margin-top: 30px;
+  width: 180px;
+  height: 180px;
+}
+.fa {
+  color: #7687a1;
+}
+.mission {
+  height: 405px;
+}
+.mission .mission-content {
+  display: inline;
+  float: left;
+  width: 47.5%;
+  margin: 0 1.25%;
+}
+.mission .mission-content h2,
+.mission .mission-content p {
+  text-align: left;
+}
+.mission img {
+  padding-top: 25px;
+  display: inline;
+  float: left;
+  width: 47.5%;
+  margin: 0 1.25%;
+}
+#subnav {
+  display: block;
+  clear: both;
+  padding: 20px 0;
+  display: inline;
+  float: left;
+  width: 47.5%;
+  margin: 0 1.25%;
+}
+#subnav ul {
+  margin: 0;
+  padding: 0;
+}
+#subnav ul li {
+  margin-right: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+#subnav ul li.current {
+  width: auto;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #f1d3b1;
+  border: 1px solid #a7a195;
+}
+#subnav ul li a {
+  padding: 8px 16px;
+}
+#subnav ul li a:hover {
+  background-color: #f1d3b1;
+  border: 1px solid #a7a195;
+}
+.images {
+  clear: both;
+}
+#photos {
+  clear: both;
+}
+#photos figure {
+  position: relative;
+  margin: 0;
+  padding: 20px 0;
+  display: inline;
+  float: left;
+  width: 22.5%;
+  margin: 0 1.25%;
+}
+#photos figcaption {
+  position: absolute;
+  margin: 20px 0 ;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  top: 0;
+  opacity: 0;
+  transition: all .25s linear;
+}
+#photos figcaption:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#photos figcaption img {
+  padding: 80px 0 15px;
+  width: auto;
+  height: auto;
+  top: 85px;
+}
+#photos figcaption h3 {
+  font-size: 18px;
+  color: #fff;
+}
+footer {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #7687a1;
+}
+footer p {
+  font-size: 14px;
+  color: #f1ead8;
+  text-align: center;
+}
+@media (max-width: 1280px) {
+  header h1 {
+    padding: 20px 0;
+  }
+  header #topnav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .tagline h1,
+  .tagline h2 {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  .tagline h1 span,
+  .tagline h2 span {
+    padding: 12px 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f1ead8;
+  }
+  .tagline h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .about-bg,
+  .ptrf-bg {
+    clear: both;
+    margin: 0;
+    height: 490px;
+  }
+  .about-bg h1,
+  .ptrf-bg h1 {
+    margin-top: 20px;
+  }
+  .about-bg p,
+  .ptrf-bg p {
+    width: 90%;
+  }
+  .about-bg h1,
+  .ptrf-bg h1,
+  .about-bg p,
+  .ptrf-bg p {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .about-bg h1,
+  .ptrf-bg h1 {
+    font-size: 60px;
+  }
+  .about-bg span,
+  .ptrf-bg span {
+    color: #7687a1;
+  }
+}
+@media (max-width: 1024px) {
+  header h1 {
+    margin: 0 10px;
+    padding: 20px 0;
+    display: inline;
+    float: left;
+    width: 80.83333333333333%;
+    margin: 0 1.25%;
+  }
+  header #topnav {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  header #topnav ul {
+    margin: 0;
+    padding: 0;
+  }
+  header #topnav ul li {
+    margin: 10px;
+  }
+  .tagline {
+    position: absolute;
+    top: 30%;
+  }
+  i.fa-bars {
+    float: right;
+    margin: 20px 10px;
+    cursor: pointer;
+  }
+  section #main-content {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    line-height: 25px;
+  }
+  #photos figure {
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    display: inline;
+    float: left;
+    width: 30.833333333333336%;
+    margin: 0 1.25%;
+  }
+  #photos figcaption {
+    position: absolute;
+    margin: 20px 0;
+    width: 100%;
+    height: 220px;
+  }
+  #subnav {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+}
+@media (max-width: 768px) {
+  header #topnav {
+    display: none;
+  }
+  i.fa-bars {
+    display: block;
+    float: right;
+  }
+  section .main li {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  section .main li p {
+    font-size: 16px;
+  }
+  article .projects li {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  article .team li {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  article .team li p {
+    font-size: 16px;
+  }
+  article .team li img {
+    margin-top: 30px;
+    width: 70%;
+    height: 70%;
+  }
+  article #subnav {
+    display: none;
+    width: 50%;
+  }
+  article #subnav li {
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+  .mission {
+    height: 100%;
+  }
+  .mission .mission-content {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  .mission img {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #photos figure {
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  #photos figcaption {
+    position: absolute;
+    margin: 20px 0;
+    width: 100%;
+    height: 85%;
+  }
+}
+@media (max-width: 640px) {
+  header #topnav li {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+  header #topnav li a {
+    padding-left: 12px;
+  }
+  header #topnav li a:hover,
+  header #topnav li a.current {
+    padding-left: 10px;
+    border-bottom: none;
+    border-left: 2px solid #7687a1;
+  }
+  article .projects li {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  header .slider h1 span,
+  header .slider h2 span {
+    padding: 12px;
+  }
+  .tagline h1 span,
+  .tagline h2 span {
+    padding: 12px;
+  }
+  .tagline h2 {
+    font-size: 18px;
+  }
+  .header-bottom span {
+    font-size: 16px;
+  }
+  article .projects li {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  article .team li {
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  article .team li img {
+    margin-top: 30px;
+    width: 70%;
+    height: 70%;
+  }
+  #subnav {
+    display: none;
+    display: inline;
+    float: left;
+    width: 47.5%;
+    margin: 0 1.25%;
+  }
+  #photos figure {
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    display: inline;
+    float: left;
+    width: 97.5%;
+    margin: 0 1.25%;
+  }
+  #photos figcaption {
+    margin: 20px 0;
+    width: 100%;
+    height: 87%;
+  }
+}
